@@ -1,0 +1,37 @@
+server:
+  port: 8080
+spring:
+  mail:
+    username: 1090028720@qq.com
+    password: ukksmcfqakqribea
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          auth: true
+          starttls:
+            enable: false
+            required: false
+    protocol: smtps
+
+    from: 1090028720@qq.com
+  application:
+    name: Dining
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///dining
+    username: root
+    password: hrj666
+mybatis-plus:
+  configuration:
+    #将数据库中表名字段中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      #主键生成策略
+      id-type: assign_id
+dining:
+  path: C:\Users\Jandy\Downloads\img

@@ -15,8 +15,12 @@ spring:
             enable: false
             required: false
     protocol: smtps
-
     from: 1090028720@qq.com
+  redis:
+    host: huangrenjie.xyz
+    port: 6379
+    password: hrj666
+    database: 0
   application:
     name: Dining
   datasource:

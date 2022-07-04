@@ -26,8 +26,8 @@ import java.util.UUID;
 @Slf4j
 public class CommonController {
 
-    //@Value("${dining.path}")
-    private String basePath="../image";
+    @Value("${dining.path}")
+    private String basePath;
 
     @PostMapping("/upload")
     public R<String> upload(MultipartFile file) {

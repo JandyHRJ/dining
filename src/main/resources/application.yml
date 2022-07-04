@@ -17,7 +17,7 @@ spring:
     protocol: smtps
     from: 1090028720@qq.com
   redis:
-    host: huangrenjie.xyz
+    host: 101.35.207.25
     port: 6379
     password: hrj666
     database: 0
@@ -38,4 +38,4 @@ mybatis-plus:
       #主键生成策略
       id-type: assign_id
 dining:
-  path: C:\Users\Jandy\Downloads\img
+  path: C:\Users\Jandy\Downloads\img\

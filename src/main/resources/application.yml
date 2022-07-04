@@ -21,6 +21,9 @@ spring:
     port: 6379
     password: hrj666
     database: 0
+  cache:
+    redis:
+      time-to-live: 1800000 #缓存过期时间
   application:
     name: Dining
   datasource:

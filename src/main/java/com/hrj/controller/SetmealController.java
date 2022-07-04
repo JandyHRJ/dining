@@ -62,7 +62,6 @@ public class SetmealController {
         List<Setmeal> records = pageInfo.getRecords();
         List<SetmealDto> list = records.stream().map((item) -> {
             SetmealDto setmealDto = new SetmealDto();
-
             BeanUtils.copyProperties(item, setmealDto);
 
             Long categoryId = item.getCategoryId();
